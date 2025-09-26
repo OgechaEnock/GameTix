@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Ticketing App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <h1>GAMETIX</h1>
+    <div class="search-group">
+      <input type="text" id="search-input" placeholder="Search ...">
+      <button id="btn-reset">Reset</button>
+    </div>
+
+  </nav>
+
+  <div class="layout">
+
+    <aside class="sidebar" id="sport-tabs">
+      <button class="tab-btn" data-sport="Football">Football</button>
+      <button class="tab-btn" data-sport="Basketball">Basketball</button>
+      <button class="tab-btn" data-sport="Golf">Golf</button>
+
+      <hr>
+
+      <div class="filter-section">
+        <h3>Filter</h3>
+        <input type="text" id="filter-input" placeholder="Search tickets...">
+        <select id="price-filter">
+          <option value="">All Prices</option>
+          <option value="low">Below Ksh 500</option>
+          <option value="mid">Ksh 500 - Ksh 1000</option>
+          <option value="high">Above Ksh 1000</option>
+        </select>
+      </div>
+    </aside>
+
+
+    <main class="content">
+      <div id="product-container" class="grid"></div>
+      <div id="product-view" class="editor">
+        <p class="text-muted"></p>
+      </div>
+    </main>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
